@@ -13,11 +13,35 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     let edificios = ["UNO","DOS","TRES","CUATRO","CINCO","SEIS"]
     let image = UIImage(named:"prueba")
     
+    let YearBornKey = "YearBorn"
+    let FavoriteFoodKey = "FavoriteFood"
+    let IsSettingOnKey = "IsSettingOn"
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        //1
+        if let plist = Plist(name: "data") {
+            //2
+            let dict = plist.getMutablePlistFile()!
+            dict[YearBornKey] = 1979
+            //3
+            do {
+                try plist.addValuesToPlistFile(dictionary: dict)
+
+            } catch {
+                print(error)
+            }
+            //4
+            print(plist.getValuesInPlistFile())
+        } else {
+            print("Unable to get Plist")
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

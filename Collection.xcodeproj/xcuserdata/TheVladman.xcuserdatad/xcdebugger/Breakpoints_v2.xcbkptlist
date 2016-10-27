@@ -10,11 +10,11 @@
             ignoreCount = "1"
             continueAfterRunningActions = "No"
             filePath = "Collection/ViewController.swift"
-            timestampString = "499098461.455635"
+            timestampString = "499302372.952703"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
