@@ -14,11 +14,13 @@ class ImagenViewController: UIViewController {
     
     var image = UIImage()
     
+    @IBOutlet weak var titleDetail: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.imagenView.image = self.image
-        
+        self.imagenView.image = UIImage(named: "mapa")
+        self.titleDetail.text = self.title
         // Do any additional setup after loading the view.
     }
 

@@ -2,11 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>YearBorn</key>
-	<integer>0</integer>
-	<key>IsSettingOn</key>
-	<false/>
-	<key>FavoriteFood</key>
-	<string></string>
+	<key>dx</key>
+	<string>HOLa</string>
+	<key>sds</key>
+	<array>
+		<string>vcb</string>
+		<string>cvbcb</string>
+		<string>cbcb</string>
+	</array>
 </dict>
 </plist>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="prI-Lz-xLX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eMW-PL-faP">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--EDIFICIOS-->
+        <!--Edicicios-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Collection" customModuleProvider="target" sceneMemberID="viewController">
@@ -77,7 +77,9 @@
                             <constraint firstItem="k8y-5v-cv8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rFh-jM-ai8"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="EDIFICIOS" id="YXj-bP-MYK"/>
+                    <navigationItem key="navigationItem" title="Edicicios" id="YXj-bP-MYK">
+                        <barButtonItem key="backBarButtonItem" title=" " id="1qt-Cj-9OW"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="k8y-5v-cv8" id="BjX-0g-N5V"/>
                         <segue destination="7Z9-bL-hSK" kind="show" identifier="showImage" id="uR0-E2-EIH"/>
@@ -99,28 +101,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KgJ-i7-Mp2"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KgJ-i7-Mp2">
+                                <frame key="frameInset" minY="145" width="320" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLm-be-Yie">
+                                <frame key="frameInset" minY="66" width="320" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="KgJ-i7-Mp2" firstAttribute="leading" secondItem="M6N-77-g2U" secondAttribute="leading" id="0jK-Hk-0rB"/>
-                            <constraint firstItem="KgJ-i7-Mp2" firstAttribute="top" secondItem="M6N-77-g2U" secondAttribute="top" id="DxZ-YP-gM1"/>
-                            <constraint firstAttribute="trailing" secondItem="KgJ-i7-Mp2" secondAttribute="trailing" id="JXK-lt-XBx"/>
-                            <constraint firstItem="KgJ-i7-Mp2" firstAttribute="bottom" secondItem="H44-rt-vVp" secondAttribute="top" id="MHQ-3P-cKc"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imagenView" destination="KgJ-i7-Mp2" id="hw0-Dc-3Pp"/>
+                        <outlet property="titleDetail" destination="SLm-be-Yie" id="Jb7-s5-tmn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1L-Yj-CLi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1936.875" y="122.5"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Edicifios-->
         <scene sceneID="wmn-UK-FO5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="prI-Lz-xLX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Edicifios" image="edificio" id="9IE-0I-9iC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ilb-27-4kz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -133,7 +141,69 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="694-Yt-bPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="777.66116941529242"/>
+            <point key="canvasLocation" x="441" y="753"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6ZX-GX-lYE">
+            <objects>
+                <tabBarController id="eMW-PL-faP" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" itemPositioning="centered" id="YfJ-mm-KZg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="prI-Lz-xLX" kind="relationship" relationship="viewControllers" id="cad-g5-2b5"/>
+                        <segue destination="jsE-10-5ls" kind="relationship" relationship="viewControllers" id="86g-ia-IRY"/>
+                        <segue destination="cgD-lU-1KZ" kind="relationship" relationship="viewControllers" id="R37-L3-XFP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i6x-Um-62P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-375" y="1000"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="8cX-vF-RoU">
+            <objects>
+                <viewController id="cgD-lU-1KZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ts7-gp-sHZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Lj-XN-cGC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z00-zm-UWu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Info" image="info" id="Jvd-vI-bZS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UYG-Mz-ixQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189" y="2368"/>
+        </scene>
+        <!--Camara-->
+        <scene sceneID="09W-nc-k8m">
+            <objects>
+                <viewController id="jsE-10-5ls" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O9V-7D-9Do"/>
+                        <viewControllerLayoutGuide type="bottom" id="aaf-tX-275"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9zl-3b-zRU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Camara" image="camara" id="3d9-ID-GjI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TMZ-7I-tNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="461" y="1578"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camara" width="44" height="44"/>
+        <image name="edificio" width="44" height="44"/>
+        <image name="info" width="44" height="44"/>
+    </resources>
 </document>

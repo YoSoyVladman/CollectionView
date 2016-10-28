@@ -28,16 +28,10 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         if let plist = Plist(name: "data") {
             //2
             let dict = plist.getMutablePlistFile()!
-            dict[YearBornKey] = 1979
-            //3
-            do {
-                try plist.addValuesToPlistFile(dictionary: dict)
-
-            } catch {
-                print(error)
+            for(key,value) in dict{
+                print(" \(key): fdfsd \(value)")
             }
-            //4
-            print(plist.getValuesInPlistFile())
+            
         } else {
             print("Unable to get Plist")
         }
@@ -61,8 +55,6 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         
         cell.imageView?.image = self.image
         cell.titleLabel?.text = self.edificios[indexPath.row]
-        
-        
         return cell
     }
     
@@ -77,8 +69,6 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             let indexPaths = self.collectionView!.indexPathsForSelectedItems!
             let indexPath = indexPaths[0] as NSIndexPath
             let vc = segue.destination as! ImagenViewController
-            
-            vc.image = self.image!
             vc.title = self.edificios[indexPath.row]
             
             
