@@ -2,13 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>dx</key>
-	<string>HOLa</string>
-	<key>sds</key>
-	<array>
-		<string>vcb</string>
-		<string>cvbcb</string>
-		<string>cbcb</string>
-	</array>
+	<key>New item - 3</key>
+	<dict>
+		<key>df</key>
+		<string></string>
+		<key>uno</key>
+		<string></string>
+	</dict>
+	<key>New item - 2</key>
+	<string>n</string>
+	<key>New item</key>
+	<string>a</string>
 </dict>
 </plist>

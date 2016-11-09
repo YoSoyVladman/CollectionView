@@ -10,12 +10,8 @@ import UIKit
 
 class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
     
-    let edificios = ["UNO","DOS","TRES","CUATRO","CINCO","SEIS"]
+    let edificios = ["Prueba1","Prueba2","Prueba3","Prueba4","Prueba5","Prueba6","Prueba7","Prueba8","Prueba9","Prueba10","Prueba11","Prueba12","Prueba13","Prueba14"]
     let image = UIImage(named:"prueba")
-    
-    let YearBornKey = "YearBorn"
-    let FavoriteFoodKey = "FavoriteFood"
-    let IsSettingOnKey = "IsSettingOn"
     
     @IBOutlet weak var collectionView: UICollectionView!
     
