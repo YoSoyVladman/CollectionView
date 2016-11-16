@@ -60,6 +60,9 @@ struct Plist {
         let fileManager = FileManager.default
         if fileManager.fileExists(atPath: destPath!) {
             guard let dict = NSDictionary(contentsOfFile: destPath!) else { return .none }
+            print("Dic")
+            
+            print(dict)
             return dict
         } else {
             return .none

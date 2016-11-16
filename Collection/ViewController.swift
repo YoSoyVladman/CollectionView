@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
     
-    let edificios = ["Prueba1","Prueba2","Prueba3","Prueba4","Prueba5","Prueba6","Prueba7","Prueba8","Prueba9","Prueba10","Prueba11","Prueba12","Prueba13","Prueba14"]
+    let edificios = ["Ciudad de México","Prueba2","Prueba3","Prueba4","Prueba5","Prueba6","Prueba7","Prueba8","Prueba9","Prueba10","Prueba11","Prueba12","Prueba13","Prueba14"]
     let image = UIImage(named:"prueba")
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -21,11 +21,13 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         
         
         //1
-        if let plist = Plist(name: "data") {
+        if let plist = Plist(name: "Ciudades") {
             //2
             let dict = plist.getMutablePlistFile()!
             for(key,value) in dict{
-                print(" \(key): fdfsd \(value)")
+                print((value as AnyObject).count)
+                print(type(of:value))
+                print("valor =  \(value)")
             }
             
         } else {

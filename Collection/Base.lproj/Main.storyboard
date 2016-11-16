@@ -170,7 +170,7 @@
                 <navigationController title="EdificiosNavigation" automaticallyAdjustsScrollViewInsets="NO" id="prI-Lz-xLX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Edicifios" image="edificio" id="9IE-0I-9iC"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ilb-27-4kz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ilb-27-4kz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
