@@ -17,25 +17,26 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        readPlist()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
-        //1
+    }
+    
+    
+    
+    func readPlist(){
         if let plist = Plist(name: "Ciudades") {
-            //2
             let dict = plist.getMutablePlistFile()!
             for(key,value) in dict{
-                print((value as AnyObject).count)
+                print(key)
                 print(type(of:value))
                 print("valor =  \(value)")
             }
-            
-        } else {
+        }
+        else{
             print("Unable to get Plist")
         }
-        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

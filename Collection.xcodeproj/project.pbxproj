@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D85EE5E61DDCD38500D61D40 /* ImagenesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85EE5E51DDCD38500D61D40 /* ImagenesController.swift */; };
 		D85EE5E81DDCEF0100D61D40 /* Ciudades.plist in Resources */ = {isa = PBXBuildFile; fileRef = D85EE5E71DDCEF0100D61D40 /* Ciudades.plist */; };
+		D85EE5EA1DDE37E300D61D40 /* Ciudad.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85EE5E91DDE37E200D61D40 /* Ciudad.swift */; };
 		D87452281DBF858E00E1D88E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87452271DBF858E00E1D88E /* AppDelegate.swift */; };
 		D874522A1DBF858E00E1D88E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87452291DBF858E00E1D88E /* ViewController.swift */; };
 		D874522D1DBF858E00E1D88E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D874522B1DBF858E00E1D88E /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		D85EE5E51DDCD38500D61D40 /* ImagenesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagenesController.swift; sourceTree = "<group>"; };
 		D85EE5E71DDCEF0100D61D40 /* Ciudades.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Ciudades.plist; sourceTree = "<group>"; };
+		D85EE5E91DDE37E200D61D40 /* Ciudad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ciudad.swift; sourceTree = "<group>"; };
 		D87452241DBF858E00E1D88E /* Collection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Collection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D87452271DBF858E00E1D88E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D87452291DBF858E00E1D88E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				D8AD36D41DC29E1A004BC585 /* Edificios.plist */,
 				D8AD36D61DC2B8E3004BC585 /* Plist.swift */,
 				D85EE5E71DDCEF0100D61D40 /* Ciudades.plist */,
+				D85EE5E91DDE37E200D61D40 /* Ciudad.swift */,
 			);
 			path = Collection;
 			sourceTree = "<group>";
@@ -112,7 +115,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Poppler;
 				TargetAttributes = {
 					D87452231DBF858E00E1D88E = {
@@ -161,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85EE5EA1DDE37E300D61D40 /* Ciudad.swift in Sources */,
 				D85EE5E61DDCD38500D61D40 /* ImagenesController.swift in Sources */,
 				D8AD36D71DC2B8E3004BC585 /* Plist.swift in Sources */,
 				D874522A1DBF858E00E1D88E /* ViewController.swift in Sources */,
@@ -210,6 +214,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -260,6 +265,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
