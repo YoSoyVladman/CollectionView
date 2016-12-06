@@ -20,6 +20,7 @@
 		D8AD36D51DC29E1A004BC585 /* Edificios.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8AD36D41DC29E1A004BC585 /* Edificios.plist */; };
 		D8AD36D71DC2B8E3004BC585 /* Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AD36D61DC2B8E3004BC585 /* Plist.swift */; };
 		D8AD36D91DC2BD86004BC585 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8AD36D81DC2BD86004BC585 /* data.plist */; };
+		D8ECA1FD1DE4C6D800187D53 /* AppCamaraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8ECA1FC1DE4C6D800187D53 /* AppCamaraController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		D8AD36D41DC29E1A004BC585 /* Edificios.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Edificios.plist; sourceTree = "<group>"; };
 		D8AD36D61DC2B8E3004BC585 /* Plist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plist.swift; sourceTree = "<group>"; };
 		D8AD36D81DC2BD86004BC585 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		D8ECA1FC1DE4C6D800187D53 /* AppCamaraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCamaraController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				D8AD36D61DC2B8E3004BC585 /* Plist.swift */,
 				D85EE5E71DDCEF0100D61D40 /* Ciudades.plist */,
 				D85EE5E91DDE37E200D61D40 /* Ciudad.swift */,
+				D8ECA1FC1DE4C6D800187D53 /* AppCamaraController.swift */,
 			);
 			path = Collection;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				D874522A1DBF858E00E1D88E /* ViewController.swift in Sources */,
 				D874523C1DBF88FF00E1D88E /* ImagenViewController.swift in Sources */,
 				D87452281DBF858E00E1D88E /* AppDelegate.swift in Sources */,
+				D8ECA1FD1DE4C6D800187D53 /* AppCamaraController.swift in Sources */,
 				D874523A1DBF889E00E1D88E /* GaleriaCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

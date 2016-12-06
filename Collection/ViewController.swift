@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
     
-    let edificios = ["Ciudad de México","Prueba2","Prueba3","Prueba4","Prueba5","Prueba6","Prueba7","Prueba8","Prueba9","Prueba10","Prueba11","Prueba12","Prueba13","Prueba14"]
-    let image = UIImage(named:"prueba")
+    let edificios = ["Estadio Cuauhtémoc","Catedral de Puebla","Fuerte de Loreto","Centro Integral de Servicios","Estrella de Puebla","Palacio Municipal","Museo Internacional del Barroco","Pirámide de Cholula","Teleférico","Auditorio Metropolitano de Puebla","Palacio Nacional","Basílica de Guadalupe","Palacio de Bellas Artes","Monumento a la Independencia","Museo Solomon R. Guggenheim","Puente de Brooklyn","Monumento a Lincoln","Monumento a Washington","Torre Eiffel","Museo del Louvre","Arco del Triunfo","Coliseo Romano","Panteón de Agripa","Basílica de San Pedro","Edificio de Reichstag","Museo Estatal de Historia","Templo de Sensoji","Pirámides de Giza"]
+    let image = UIImage(named:"prueba2")
     
     @IBOutlet weak var collectionView: UICollectionView!
     

@@ -38,10 +38,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="154" height="162"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HxT-B1-2Ww">
-                                                    <rect key="frame" x="13" y="8" width="129" height="125"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHG-Vs-xP9">
                                                     <rect key="frame" x="0.0" y="132" width="154" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -49,6 +45,10 @@
                                                     <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HxT-B1-2Ww">
+                                                    <rect key="frame" x="13" y="8" width="129" height="125"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </view>
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -171,7 +171,7 @@
                 <navigationController title="EdificiosNavigation" automaticallyAdjustsScrollViewInsets="NO" id="prI-Lz-xLX" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Edicifios" image="edificio" id="9IE-0I-9iC"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Ilb-27-4kz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ilb-27-4kz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -265,7 +265,7 @@
         <!--Camara-->
         <scene sceneID="09W-nc-k8m">
             <objects>
-                <viewController title="Camara" id="jsE-10-5ls" sceneMemberID="viewController">
+                <viewController title="Camara" id="jsE-10-5ls" customClass="AppCamaraController" customModule="Collection" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="O9V-7D-9Do"/>
                         <viewControllerLayoutGuide type="bottom" id="aaf-tX-275"/>
@@ -275,18 +275,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xl8-al-Mt9">
-                                <rect key="frame" x="34" y="73" width="253" height="240"/>
+                                <rect key="frame" x="33" y="73" width="253" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qe-2K-vaD">
-                                <rect key="frame" x="137" y="341" width="46" height="30"/>
+                                <rect key="frame" x="113" y="341" width="95" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Open Camara"/>
+                                <connections>
+                                    <action selector="openCamara:" destination="jsE-10-5ls" eventType="touchUpInside" id="sjL-qv-x5q"/>
+                                    <action selector="openCamaraBoton:" destination="jsE-10-5ls" eventType="touchUpInside" id="rhB-uw-WS8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ym-p4-OmN">
-                                <rect key="frame" x="137" y="387" width="46" height="30"/>
+                                <rect key="frame" x="90" y="387" width="141" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Open Photos Library">
+                                    <color key="titleColor" red="0.97249442338943481" green="0.25775617361068726" blue="0.017906047403812408" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwK-hh-wsL">
                                 <rect key="frame" x="258" y="28" width="46" height="30"/>
@@ -297,6 +303,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Camara" image="camara" id="3d9-ID-GjI"/>
+                    <connections>
+                        <outlet property="imagepicked" destination="Xl8-al-Mt9" id="n3Y-ZU-GVl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TMZ-7I-tNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
